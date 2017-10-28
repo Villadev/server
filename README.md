@@ -41,3 +41,20 @@ http://localhost:5000/getPoliciesLinkedUserName
 ```
 http://localhost:5000/getUserLinkedPolicy
 ```
+
+### Descripción del proyecto
+
+Para la creación del proyecto, he utilizado las librerias express para hacer crear lo servicion GET de entrada a nuestro server y requestify para las consultas a los servicios externos.
+
+#### Organizción del proyecto
+
+##### index.js
+Creación y encendido del server. Administra la carga de datos y las consultas externas a nuestros datos
+
+##### /models
+Client.js modelo de cliente
+Policy.js modelo de polizas
+AdminClientsPolicies.js estructurador de datos, devuelve las los datos requeridos para las funciones del serve, linca objetos y filtra por los valores necesarios
+
+##### /services
+getDataService.js Servicios de consultas a los servicios externos
